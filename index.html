@@ -12,7 +12,11 @@
   <script>
     window.$docsify = {
       name: '我的学习记录',
+      // 强制加载侧边栏，指定文件路径
       loadSidebar: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
       subMaxLevel: 3,
       search: 'auto'
     }
